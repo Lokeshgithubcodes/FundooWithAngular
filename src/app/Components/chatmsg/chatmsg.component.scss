@@ -1,0 +1,153 @@
+.main-div{
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 450px;
+    place-content: center;
+    height: 570px;
+    padding-top: 50px;
+    margin-right: 700px;
+}
+
+.mat-card-main{
+    align-items: stretch;
+}
+
+.one-div{
+    display: flex;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.a{
+    display: flex;
+    
+}
+
+
+.l1{
+    display: flex;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-right: 0px;
+    border:10;
+    margin:0px auto;
+    margin-top: 10px;
+    width :100px;
+    border : 1px solid rgba(153, 192, 100, 0.62);
+    height :25px; 
+    border-radius :10px;
+    text-align: center;
+    background-color: rgb(161, 164, 70);
+    margin-left: 135px;
+    
+}
+
+.arrow1{
+    display: flex;
+    padding-left: 20px;
+    padding-top: 10px;
+    margin-right: 20px;
+}
+
+.b{
+    display: flex;
+    
+}
+
+
+.l2{
+    display: flex;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-right: 0px;
+    border:10;
+    margin:0px auto;
+    margin-top: 10px;
+    width :100px;
+    border : 1px solid rgba(153, 192, 100, 0.62);
+    height :25px; 
+    border-radius :10px;
+    text-align: center;
+    background-color: rgb(161, 164, 70);
+    margin-left: 10px;
+    
+}
+
+.arrow2{
+    display: flex;
+    padding-left: 20px;
+    padding-top: 10px;
+    margin-left: 10px;
+}
+
+.c{
+    display: flex;
+    
+}
+
+
+.l3{
+    display: flex;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-right: 0px;
+    border:10;
+    margin:0px auto;
+    margin-top: 10px;
+    width :100px;
+    border : 1px solid rgba(153, 192, 100, 0.62);
+    height :25px; 
+    border-radius :10px;
+    text-align: center;
+    background-color: rgb(161, 164, 70);
+    margin-left: 135px;
+    
+}
+
+.arrow3{
+    display: flex;
+    padding-left: 20px;
+    padding-top: 10px;
+    margin-right: 20px;
+}
+
+.d{
+    display: flex;
+    
+}
+
+
+.l4{
+    display: flex;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-right: 0px;
+    border:10;
+    margin:0px auto;
+    margin-top: 10px;
+    width :100px;
+    border : 1px solid rgba(153, 192, 100, 0.62);
+    height :25px; 
+    border-radius :10px;
+    text-align: center;
+    background-color: rgb(161, 164, 70);
+    margin-left: 10px;
+    
+}
+
+.arrow4{
+    display: flex;
+    padding-left: 20px;
+    padding-top: 10px;
+    margin-left: 10px;
+}
+
+.e{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    padding-top: 100px;
+    margin-left: 10px;
+}
+

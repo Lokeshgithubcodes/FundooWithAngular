@@ -1,0 +1,75 @@
+<div class="body">
+    <div class="container">
+
+        <div class="container1">
+
+            <div class="row">
+                <div class="header">
+                    <img class="image" src="../../assets/Google_image.jpg">
+                    <p class="sign-in-text">Create Your Google Account</p>
+                </div>
+                <div class="input">
+
+                    <div class="names" style="padding-right: 10px;">
+                        <mat-form-field appearance="outline" class="custom-mat-field">
+                            <mat-label>First Name</mat-label>
+                            <input matInput placeholder="FirstName" class="custom-mat-input" name="firstName" [(ngModel)]="regObj.firstName">
+                          </mat-form-field>
+                          <mat-form-field appearance="outline" class="custom-mat-field">
+                            <mat-label>Last Name</mat-label>
+                            <input matInput placeholder="Last Name" class="custom-mat-input" name="lastName" [(ngModel)]="regObj.lastName">
+                          </mat-form-field>
+                    </div>
+                    <mat-form-field appearance="outline" class="custom-mat" >
+                        <mat-label>Username</mat-label>
+                        <input matInput placeholder="Username" class="username" name="email" [(ngModel)]="regObj.email" >
+                      </mat-form-field>
+
+                </div>
+                <div class="para">
+                    <span>
+                        You can use letters, numbers & periods
+                    </span>
+                    <p class="data-text">Use my current email addrees instead</p>
+                </div>
+                <div class="Password">
+                    <mat-form-field appearance="outline" class="custom-mat-field">
+                        <mat-label>Password</mat-label>
+                        <input matInput placeholder="Password" class="custom-mat-input" name="password" [(ngModel)]="regObj.password">
+                      </mat-form-field>
+                      <mat-form-field appearance="outline" class="custom-mat-field">
+                        <mat-label>Confirm</mat-label>
+                        <input matInput placeholder="Confirm" class="custom-mat-input" name="confirmPassword" [(ngModel)]="confirmPassword" >
+                      </mat-form-field>
+                </div>
+                <div class="end">
+                        <span style="padding-left: 8px;">
+                            Use 8 more characters with a max of letters, numbers & symbols
+                        </span>
+                    <br>
+                        <mat-checkbox color="primary" class="check-box" style="color: aliceblue;padding-left: 0px;margin-left: 0px;">Show password</mat-checkbox>
+                </div>
+                <div class="buttons">
+                    <button mat-button class="login-button-1" style="color: blue">Sign in instead</button>
+                    <button mat-raised-button class="login-button-2"  style="color: white;padding-right: 10px;margin-right: 40px;background-color: blue;border-color: grey;width: 100px;margin-left: 20px;" (click)="registerFunction()">Next</button>
+    
+                </div>
+                
+            </div>
+            <div class="main-image">
+                <div>
+                    <img  class="image1" src="../../assets/Google_shield.png"/>
+                </div>
+                <div>
+                    <span class="">One account All of Google <br> working for you</span>
+                    
+                </div>
+                
+            </div>
+
+        </div>
+        
+
+    </div>
+
+</div>

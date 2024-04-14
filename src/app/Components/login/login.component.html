@@ -1,0 +1,46 @@
+
+
+
+<div class="main-div">
+  <mat-card class="mat-card-main">
+    <form>
+      <div class="sign-in">
+        <img class="google-pic" src="../../assets/Google_image.jpg">
+        <p class="sign-in-text">Sign in</p>
+        <p class="basic-text">to continue to Gmail</p>
+
+      </div>
+
+      <div class="input-fields">
+
+        <mat-form-field appearance="outline" class="fields">
+          <mat-label>EmailorPhone</mat-label>
+          <input matInput placeholder="EmailorPhone" name="email" [(ngModel)]="loginObj.email">
+        </mat-form-field>
+
+
+        <mat-form-field appearance="outline" class="fields">
+          <mat-label>Password</mat-label>
+          <input matInput placeholder="Password" name="password" [(ngModel)]="loginObj.password">
+        </mat-form-field>
+
+      </div>
+
+      <div class="forgot-email">
+        <a routerLink="/forgotemail">Forgot email?</a>
+      </div>
+
+      <div class="words">
+        <p class="ex-text">Not your computer? Use Guest mode to sign in privately. </p>
+        <p class="guest">Learn more about using Guest mode</p>
+      </div>
+
+      <div>
+        <button mat-button class="login-button-1" color="White">Create account</button>
+        <button mat-raised-button class="login-button-2" (click)="LoginUser()">Submit</button>
+      </div>
+
+    </form>
+  </mat-card>
+
+</div>

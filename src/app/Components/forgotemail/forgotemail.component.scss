@@ -1,0 +1,61 @@
+
+.main-div{
+    display:grid;
+    grid-template-columns: 450px;
+    grid-template-rows: 400px;
+    place-content: center;   
+    height: 570px;
+    padding-top: 60px;
+    
+}
+
+.mat-card-main {
+    align-items: strech;
+}
+
+
+.sign-in-text{
+    margin-top: 0px;
+    font-size: 24px;
+    margin-bottom: 0px;
+    position: relative;
+    z-index: 2;
+}
+
+.google-pic{
+    height:70px;
+    position: relative;
+    top: 14px;
+}
+
+.sign-in {
+    border-top: 0px;
+    text-align: center;
+}
+
+.basic-text{
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.login-button-2 {
+    margin-top:35px; 
+    margin-left:305px;
+    padding-left: 25px;
+    padding-right:30px;
+    background-color: #0d6efd;
+    color: white;
+    margin-right: 30px;
+}
+
+.input-field{
+  margin-left: 45px;
+  padding-top: 30px;
+}
+
+.input-field mat-form-field{
+  width: 350px;
+  
+}
+
+  

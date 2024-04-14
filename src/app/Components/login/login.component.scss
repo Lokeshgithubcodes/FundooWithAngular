@@ -1,0 +1,92 @@
+
+.main-div{
+    display: grid;
+    grid-template-columns: 450px;
+    grid-template-rows: 510px;
+    place-content: center;
+    height: 570px;
+    padding-top: 50px;
+}
+
+.mat-card-main{
+    align-items: stretch;
+}
+
+.sign-in{
+    border-top:0px;
+    text-align: center;
+}
+
+.login-button-1 {
+    color:#0d6efd;
+    margin-right: 158px;
+    margin-left: 15px;
+
+}
+.login-button-2{
+    color: white;
+    background-color: #0d6efd;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.sign-in-text{
+    margin-top: 0px;
+    font-size: 24px;
+    margin-bottom: 0px;
+    position: relative;
+    z-index: 2;
+}
+
+.google-pic{
+    height: 70px;
+    position: relative;
+    top: 0px;
+}
+
+.basic-text{
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.ex-text{
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 14px;
+
+}
+
+.forgot-email{
+    border-top: 0px;
+    font-family: Roboto;
+    color:#0d6efd;
+    font-size:14px;
+    font-weight: 500;
+    margin-left: 30px;
+
+}
+a {
+    color:#0d6efd;;
+    text-decoration: none;
+
+}
+
+.input-fields{
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.input-field mat-form-field{
+    width: 350px;
+    height: 70px;;
+}
+
+.fields{
+    margin-right: 20px;
+}
+
+.words{
+    margin-left: 20px;
+}

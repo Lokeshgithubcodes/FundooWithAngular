@@ -1,0 +1,28 @@
+<mat-toolbar color="white">
+    <mat-toolbar-row>
+        <button mat-icon-button (click)="sidenav.toggle()">
+            <mat-icon >menu</mat-icon>
+        </button>
+        <img src="../../assets/Google_keep.png" alt="" srcset="">
+        <h1 style="margin-left: 10px;">Keep</h1>
+        <div class="mat-toolbar-row-col2">
+            <mat-icon>search</mat-icon>
+            <input matInput placeholder="Search">
+        </div>
+</mat-toolbar-row>
+</mat-toolbar>
+<mat-sidenav-container>
+        <mat-sidenav #sidenav open="false" mode="side">
+            <mat-nav-list>
+                <a mat-list-item>Notes</a>
+                <a mat-list-item>Remainders</a>
+                <a mat-list-item>Archive</a>
+                <a mat-list-item>Trash</a>
+            </mat-nav-list>
+        </mat-sidenav>
+        <mat-sidenav-content>
+            <div style="overflow: hidden; height: 100vh;" >
+            </div>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+
