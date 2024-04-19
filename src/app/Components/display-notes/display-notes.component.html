@@ -1,0 +1,21 @@
+<div class="card-container">
+    <div *ngFor="let notes of notesList" class="card">
+      <mat-card class="notesContainer">
+        <mat-card-title mat-input class="title">
+          {{notes.title}}  <button mat-icon-button><img class="pin" src="../../assets/keep.svg"/></button>
+        </mat-card-title>
+        <mat-card-content>
+          <div role="textbox" class="text"></div>
+          <div>{{notes.noteId}}</div>
+        </mat-card-content>
+        <mat-card-content>
+           <p class="font"> {{notes.description}}</p>
+        </mat-card-content>
+        <div>
+          <app-app-icons [notesObject]="notes">
+          
+          </app-app-icons>
+        </div>
+      </mat-card>
+    </div>
+  </div>

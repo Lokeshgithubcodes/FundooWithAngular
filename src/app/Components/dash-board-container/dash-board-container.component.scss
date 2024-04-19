@@ -1,0 +1,121 @@
+.mat-toolbar-row-col2{
+    background-color: #24467912;
+    width: 705px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin-left: 90px;
+    padding-left: 17px;
+}
+mat-toolbar-row .mat-toolbar-row-col2:hover{
+    background-color: white;
+}
+.mat-toolbar-row-col2 input{
+    width: 500px;
+    margin-left: 15px;
+    font-size: medium;
+    font-weight: 400;
+    background-color: #24467903;
+    outline: none;
+    border: none;
+}
+mat-toolbar-row .mat-toolbar-row-col3{
+    width: 270px;
+    height: 50px;
+    //border: 2px solid black;
+    margin-left: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgba(0, 0, 0, 0.692);
+    flex-wrap:wrap;
+}
+@media screen and (max-width: 600px) {
+    .mat-toolbar-row-col3 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .mat-toolbar-row-col3 button {
+      margin: 5px;
+    }
+  }
+  mat-nav-list a{
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    border-radius: 0px 20px 20px 0px;
+    //border-color: black;
+    padding-bottom: 10px;
+}
+  
+mat-sidenav{
+    padding-top: 10px;
+    width: 280px;
+    padding-left: 10px;
+    border: none;
+}
+mat-list-item{
+    display: flex;
+    //justify-content: space-between;
+}
+
+mat-nav-list a label{
+    //margin-top: 15px;;
+    margin-left: 30px;
+    //text-align: center;
+    //padding-bottom: 25px;;
+    //padding-bottom: 10px;
+    //margin-bottom: 10px;;
+    //padding-bottom: 50px;;
+    //border: 2px solid black;
+}
+mat-nav-list mat-icon{
+    padding-top: 15px;
+}
+.increase_size{
+    margin: 0px;
+}
+.ProfileDialog{
+    height: 250px;
+    width: 330px;
+    //border: 2px solid black;
+    float: right;
+    position: absolute;
+    top: 18px;
+    right: 5px;
+    padding-right: 10px;
+    //background-color: aqua;
+    background-color: aliceblue;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.142) 2px 2px 15px 15px;
+    text-align: center;
+    margin-right: 30px;
+    z-index: 1;
+}
+.account-manage{
+    width:200px;
+    height:50px;
+    border:20px;
+    border-radius: 10px;
+}
+.align-items{
+    display: flex;
+    justify-content: center;
+    
+}
+.closeRight{
+    //float:right;
+    margin-left: 130px;
+}
+
+.profile-margin{
+    margin-left: 40px;
+    //margin-right: 100px;
+    text-align: center;
+    padding-left: 100px;
+}
+.side-image{
+    padding-top: 15px;
+}

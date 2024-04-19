@@ -1,0 +1,47 @@
+<div *ngIf="display;then takeNotes else inputNotes"></div>
+<ng-template #takeNotes>
+    <div class="takeNotes" style="height: 28px;width:650px">
+        <input class="notesbar" type="text" placeholder="Take a note..." (click)="display=!display">
+        <button class="notesbutton">
+            <!-- <mat-icon>check_box</mat-icon> -->
+            <img class="notes-img" src="../../assets/checkbox.svg">
+        </button>
+        <button class="notesbutton">
+            <!-- <mat-icon>brush</mat-icon> -->
+            <img class="notes-img" src="../../assets/brush.svg">
+        </button>
+        <button class="notesbutton">
+            <!-- <mat-icon></mat-icon> -->
+            <img class="notes-img" src="../../assets/image.svg"> 
+        </button>
+
+    </div>
+
+</ng-template>
+<ng-template #inputNotes>
+    <form [formGroup]="notesForm" (ngSubmit)="onSubmit()">
+        <div class="createnotes">
+            
+            <div class="notesfiled">
+                <div class="titlebar">
+                    <input class="title" type="text" placeholder="title" formControlName="title">
+                    <button class="notesbutton">
+                        <img class="notes-img" src="../../assets/keep.svg"/>
+                    </button>
+                </div>
+                <input class="desc" type="text" placeholder="Take a note..." style="font-size: 15px;font-weight: 200;" formControlName="description">
+                <div class="notesicon">
+                    <div class="icons">
+                        <app-app-icons></app-app-icons>
+                        <button class="notesbutton" (ngSubmit)="onSubmit()">Close</button>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </form>
+
+    
+    
+</ng-template>

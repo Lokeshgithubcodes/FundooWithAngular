@@ -20,6 +20,12 @@ import { DashBoardContainerComponent } from './Components/dash-board-container/d
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
+import { AppIconsComponent } from './Components/app-icons/app-icons.component';
+import { NotesUiMainComponent } from './Components/notes-ui-main/notes-ui-main.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { DisplayNotesComponent } from './Components/display-notes/display-notes.component';
+import { GetnotesComponent } from './Components/getnotes/getnotes.component';
+import {MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -28,7 +34,11 @@ import {MatListModule} from '@angular/material/list';
     RegisterComponent,
     ForgotemailComponent,
     ChatmsgComponent,
-    DashBoardContainerComponent
+    DashBoardContainerComponent,
+    AppIconsComponent,
+    NotesUiMainComponent,
+    DisplayNotesComponent,
+    GetnotesComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +53,9 @@ import {MatListModule} from '@angular/material/list';
     MatIconModule,
     MatToolbarModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    ReactiveFormsModule,
+    MatMenuModule
   ],
   providers: [
     provideClientHydration(),

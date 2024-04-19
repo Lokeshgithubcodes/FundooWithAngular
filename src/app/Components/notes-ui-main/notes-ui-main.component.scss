@@ -1,0 +1,74 @@
+.takeNotes {
+    padding-top: 20px;
+    margin-top: 30px;
+    width: 560px;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 8px 5px 0px;
+    color: rgba(0, 0, 0, 0.692);
+    border-width: 2px; /* Adjust the border width as needed */
+    border-style: solid; /* Add border style */
+    border-color: blanchedalmond; /* Add border color */
+    border-radius: 10px;
+}
+.takeNotes input{ 
+    height: 20px;
+    width: 390px;
+    font-size: 16px;
+    outline: aliceblue;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+.notes-img{
+    width: 30px;
+    background-color: white;
+    outline: none;
+
+}
+.notesbutton{
+    margin: 10px;
+    
+}
+.createnotes{
+    padding-top: 20px;
+    margin-top: 30px;
+    width: 560px;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 8px 5px 0px;
+    color: rgba(0, 0, 0, 0.692);
+    border-width: 2px; 
+    border-style: solid;
+    border-color: blanchedalmond; 
+    border-radius: 10px;
+
+}
+.titlebar input{ 
+    height: 20px;
+    width: 390px;
+    font-size: 16px;
+    outline: aliceblue;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+.desc{ 
+    padding-top:18px;
+    padding-bottom: 18px;
+    height: 20px;
+    width: 390px;
+    font-size: 16px;
+    outline: aliceblue;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+}
+
+

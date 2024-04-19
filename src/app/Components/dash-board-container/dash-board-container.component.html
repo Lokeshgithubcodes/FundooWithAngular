@@ -1,28 +1,60 @@
-<mat-toolbar color="white">
+<mat-toolbar>
     <mat-toolbar-row>
-        <button mat-icon-button (click)="sidenav.toggle()">
+        <button mat-icon-button (click)="sidenav.toggle()" >
             <mat-icon >menu</mat-icon>
         </button>
-        <img src="../../assets/Google_keep.png" alt="" srcset="">
-        <h1 style="margin-left: 10px;">Keep</h1>
+        <img src="../../assets/Google_keep.png"/>
+        <h1 style="margin-left:10px">Keep</h1>
         <div class="mat-toolbar-row-col2">
-            <mat-icon>search</mat-icon>
+            <mat-icon >search</mat-icon>
             <input matInput placeholder="Search">
         </div>
-</mat-toolbar-row>
+        <div class="mat-toolbar-row-col3" align="end">
+            <button mat-icon-button  matTooltip="refresh"><mat-icon>refresh</mat-icon></button>
+            <button mat-icon-button  matTooltip="List_view"><mat-icon>view_stream</mat-icon></button>
+            <button mat-icon-button  matTooltip="Settings"><mat-icon>settings</mat-icon></button>
+            <button mat-icon-button  matTooltip="Google apps"><mat-icon>apps</mat-icon></button>
+            <button mat-icon-button  class="increase_size"  matTooltip="Account details" (click)="openDialog()"><mat-icon >account_circle</mat-icon></button>
+        </div>
+    </mat-toolbar-row>
 </mat-toolbar>
-<mat-sidenav-container>
-        <mat-sidenav #sidenav open="false" mode="side">
-            <mat-nav-list>
-                <a mat-list-item>Notes</a>
-                <a mat-list-item>Remainders</a>
-                <a mat-list-item>Archive</a>
-                <a mat-list-item>Trash</a>
-            </mat-nav-list>
-        </mat-sidenav>
-        <mat-sidenav-content>
-            <div style="overflow: hidden; height: 100vh;" >
-            </div>
-        </mat-sidenav-content>
-    </mat-sidenav-container>
 
+<mat-sidenav-container>
+    <mat-sidenav #sidenav opened="false" mode="side">
+       <mat-nav-list>
+        <a mat-list-item><img class="side-image" src="../../assets/bulb.svg"><label class="labe">Notes</label></a>
+        <a mat-list-item><img class="side-image" src="../../assets/bell.svg"><label class="labe">Reminders</label></a>
+        <a mat-list-item><img class="side-image" src="../../assets/edit.svg"><label class="labe">Edit labels</label></a>
+        <a mat-list-item><img class="side-image" src="../../assets/archive.svg"><label class="labe">Archive</label></a>
+        <a mat-list-item><img class="side-image" src="../../assets/delete.svg"><label class="labe">Trash</label></a>
+       </mat-nav-list> 
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <div style="height: 80vh">
+            <!-- Your main content here -->
+            <router-outlet />
+            
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+
+<div class="ProfileDialog" *ngIf="profileDailogvalue" (click)="closeoverlay($event)">
+    
+   <div class="align-items">
+    <button mat-icon-button class="increase_size profile-margin" matTooltip="Edit"><mat-icon >account_circle</mat-icon></button>
+    <button mat-icon-button  class="closeRight" (click)="CloseProfileDialog()"><mat-icon >close</mat-icon></button>
+   </div>
+    
+    <br/>
+    <p>Hi, {{"Lokesh R"}}!</p>
+    <button class="account-manage" style="color:blue">Manage your account</button>
+    <br/><br/>
+    <div class="manageAccount" >
+    <a class="manageAccount1" routerLink="/reset_password">Reset Password</a>
+    <span class="manageAccount2" for="log">
+    <button mat-icon-button for="log" (click)="logout()" ><mat-icon>logout</mat-icon> </button>Logout
+  </span>
+  </div>
+  <mat-hint>Privacy Polocy | Terms of Service</mat-hint>
+</div>

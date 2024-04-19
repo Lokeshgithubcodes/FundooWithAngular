@@ -14,13 +14,14 @@ export class LoginComponent {
     password:''
   }
 
-  LoginUser(){debugger
+  LoginUser(){
     console.log(this.loginObj);
-    // this.httpServices.loginUser(this.loginObj).subscribe(resp=>{
-    //   alert('login Success');
-    //   console.log(resp);
+    this.httpServices.loginUser(this.loginObj).subscribe(resp=>{
+       alert('login Success');
+       console.log(resp);
       
-    // })
+       localStorage.setItem("token",resp.data.token)
+     })
   }
 
 }

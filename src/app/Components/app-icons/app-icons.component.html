@@ -1,0 +1,17 @@
+<div class="icons-app">
+<button mat-icon-button matTooltip="Reming me"><img src="../../assets/notificationNote.svg"></button>
+<button mat-icon-button matTooltip="Collaborator"><img src="../../assets/personAddNote.svg"></button>
+<button mat-icon-button matTooltip="Background options" ><img src="../../assets/paletteNote.svg"></button>
+<button mat-icon-button matTooltip="Add image"><img  src="../../assets/imageNote.svg"></button>
+<button mat-icon-button matTooltip="Archive" (click)="onArchive()" ><img  src="../../assets/archiveNote.svg"></button>
+<button mat-icon-button matTooltip="More" [matMenuTriggerFor]="moreMenu" ><img src="../../assets/moreVertNote.svg">
+<mat-menu #moreMenu="matMenu" xPosition="before">
+<button mat-menu-item (click) = "onDelete()" >Delete Note</button>
+<button mat-menu-item >Add Label</button>
+<button mat-menu-item >Add Drawing</button>
+<button mat-menu-item >make a copy</button>
+<button mat-menu-item >Show Checkboxes</button>
+</mat-menu>
+</button>
+</div>
+
