@@ -54,4 +54,17 @@ export class NotesService {
   return this.httpService.putService(`https://localhost:44375/api/Notes/archieveNote?noteId=${noteId}`, reqData, true, header);
  }
 
+ notesColor(reqData:any){
+    const noteId=reqData.noteId;
+    const color=reqData.color;
+    const header={
+    //addColorToNote?noteId=2&color=red-->URL
+    headers: new HttpHeaders({
+      'Content-type':'application/json',
+      'Authorization':'Bearer '+this.token
+    })
+  }
+  return this.httpService.putService(`https://localhost:44375/api/Notes/addColorToNote?noteId=${noteId}&color=${color}`, reqData, true, header);
+ }
+
 }

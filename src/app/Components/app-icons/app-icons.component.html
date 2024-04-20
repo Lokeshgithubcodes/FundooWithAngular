@@ -1,7 +1,7 @@
 <div class="icons-app">
 <button mat-icon-button matTooltip="Reming me"><img src="../../assets/notificationNote.svg"></button>
 <button mat-icon-button matTooltip="Collaborator"><img src="../../assets/personAddNote.svg"></button>
-<button mat-icon-button matTooltip="Background options" ><img src="../../assets/paletteNote.svg"></button>
+<button mat-icon-button matTooltip="Background options" [matMenuTriggerFor]="paletteMenu"><img src="../../assets/paletteNote.svg"></button>
 <button mat-icon-button matTooltip="Add image"><img  src="../../assets/imageNote.svg"></button>
 <button mat-icon-button matTooltip="Archive" (click)="onArchive()" ><img  src="../../assets/archiveNote.svg"></button>
 <button mat-icon-button matTooltip="More" [matMenuTriggerFor]="moreMenu" ><img src="../../assets/moreVertNote.svg">
@@ -11,6 +11,15 @@
 <button mat-menu-item >Add Drawing</button>
 <button mat-menu-item >make a copy</button>
 <button mat-menu-item >Show Checkboxes</button>
+</mat-menu>
+<mat-menu #paletteMenu="matMenu" xPosition="before" id="colorpalette" class="test2">
+    <div *ngFor='let colors of colorArray'>
+        <button class="colorIcon" [style.background]="colors.code" (click)="selectcolor(colors)" >
+
+        </button>
+
+    </div>
+
 </mat-menu>
 </button>
 </div>
